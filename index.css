@@ -11,6 +11,8 @@
     --red:#C12A38;
     --grayMedium: #e5e5e5; 
     --white: #FFFFFF;
+    --transparent-white:rgba(256, 256, 256, 0.25);
+    --transparent-black:rgba(0, 0, 0, 0.25);
 
   }
   
@@ -22,6 +24,16 @@
     font-size: 16px;
   }
   
+  h1{
+    font-size: 4rem;
+    line-height: 1rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
   a{
     color:inherit;
     text-decoration:none;
@@ -45,7 +57,7 @@
       padding:10px;
       height: 70px;
       background-color:var(--red);
-      box-shadow:30px 10px 5px black;
+      box-shadow:5px 0px 10px black;
       z-index: 3;
   }
   .main-logo{
@@ -79,10 +91,55 @@
   display: none;
   }
  
- label[for="bt-menu"]{
+label[for="bt-menu"]{
   display: none;
   }
 
+#main-content{
+  height: 100vh;
+  width: 100%;
+  background-image: url('files/anneis02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center bottom;
+  padding-top:250px;
+  padding-left: 70px;
+}
+
+.video-intro{
+  background-color: var(--transparent-black);
+  border-radius:10px;
+  width:620px;
+  height:270px;
+  padding:8px 32px;
+  margin-bottom: 32px;
+  color:var(--white);
+}
+
+.main-button{
+  width: 192px;
+  padding:14px 60px;
+  text-transform: uppercase;
+  border-radius:10px;
+  font-weight: bold;
+  margin-right:16px;
+
+}
+
+.red{
+  color:var(--white);
+  background-color:var(--red);
+
+}
+
+.white{
+  color:var(--red);
+  background-color:var(--white);
+}
+
+
+
+/* MEDIA QUERY - RESPONSIVO */
 
 @media(max-width:850px){ 
 
@@ -173,4 +230,49 @@
     opacity: 1;
     background-color:var(--white);
   }
+
+  #main-content{
+    height: 100vh;
+    width: 100%;
+    background-image: url('files/anneis02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center bottom;
+    padding:0;
+    padding-top: 250px;
+    margin-left:0;
+
+
+  
+  }
+  
+  .video-intro{
+    width:70vw;
+    height:270px;
+    padding:8px 32px;
+    margin:0 auto;
+    margin-bottom: 32px;
+  }
+
+  .main-buttons{
+    margin:0 auto;
+    text-align: center;
+    padding:8px 32px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-button{
+    width: 100%;
+    padding:8px 20px;
+    font-weight: bold;
+    font-size:0.95rem;
+
+  
+  }
+  
+
+
 }
