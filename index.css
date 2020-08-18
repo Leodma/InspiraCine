@@ -88,7 +88,14 @@
    text-transform: uppercase;
  }
 
+ .icon-menu::before{
+   content: 'menu';
 
+ }
+
+  #bt-menu:checked + label >.icon-menu::before {
+   content:'close';
+ }
  .menu-top li:hover, .menu-top li:active{
   color:var(--red);
   font-weight: bold;
