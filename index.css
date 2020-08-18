@@ -52,6 +52,10 @@
     min-height: 100vh - 94px;
     background-color: var(--black);
   }
+
+  .right-align{
+    text-align:right;
+  }
   
   header{
       position: fixed;
@@ -142,6 +146,7 @@ label[for="bt-menu"]{
 .about{
   color:var(--white);
   border-top: 4px solid var(--white);
+  min-height: 100vh;
   flex-grow:1;
   display: flex;
   flex-flow: row;
@@ -161,7 +166,7 @@ label[for="bt-menu"]{
   display: flex;
   flex-wrap:wrap;
   padding:16px;
-  align-items:center;
+  align-items:start;
 }
 
 .abas label{
@@ -196,19 +201,118 @@ label[for="bt-menu"]{
 
 #contact{
  
-  background-color:gray;
-  color:white;
+  background-color:var(--white);
+  color:var(--black);
   text-align:center;
   padding-top: 64px;
   padding-bottom:32px;
 }
 
-form input, form textarea{
-  display: block;
-  margin:10px auto;
+form{
+  width: 75vw;
+  margin:0 auto;
 }
 
 
+
+form input, form textarea{
+  width:100%;
+  padding:20px 10px;
+  margin-bottom:32px;
+  border:0;
+  font-size:1.2rem;
+  color:var(--blackLighter);
+  background:var(--grayLight);
+  border-radius: 5px;
+  transition: all .5s ease-out;
+}
+
+form input{
+  height:50px;
+}
+
+form textarea{
+  height: 120px;
+}
+
+  form  input:focus, form textarea:focus
+  {
+      border-bottom:4px solid var(--red);
+      border-radius: 0;
+      background:white;   
+  }
+
+  form input:focus{
+    height:60px; 
+  }
+  
+  form textarea:focus{
+    height:150px; 
+  }
+
+  footer{
+    background-color:var(--white);
+    padding-top:64px;
+    
+  }
+  #logos-footer{
+    
+    margin:32px auto;
+    list-style: none;
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding:8px 16px;
+  }
+
+  .logo-footer{
+    width: 100%;
+    padding:5px;
+    text-align-last: center;
+    flex-grow: 1;
+    flex-basis: 25%;
+    flex-shrink: 0;
+
+  }
+
+  .logo-footer img{
+    max-height: 80px;
+    min-width: 100px;
+  }
+
+  #bottom-footer{
+    background-color:var(--red);
+    color:var(--white);
+    min-height: 160px;
+    padding:32px;
+    font-size:0.85rem;
+    line-height:1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+
+  .social-media-footer{
+    list-style: none;
+  }
+
+  .social-media-footer .social-media-icon{
+    display: inline-block;
+    width: 60px;
+    fill: var(--white);
+    padding: 10px;
+  }
+
+  .social-media-footer .social-media-icon:hover{
+    fill: var(--transparent-white);
+
+  }
+
+
+
+   
 
 /* ******************* MEDIA QUERY  - 850px p baixo ************************ */
 
@@ -304,6 +408,7 @@ form input, form textarea{
   .menu-top .social-media-icon{
     padding: 0;
     opacity: 0.6;
+    width: 40px;
   }
 
   .menu-top .social-media-icon:hover, .menu-top .social-media-icon:active{
@@ -354,7 +459,8 @@ form input, form textarea{
     flex-flow: column-reverse;
     justify-content: space-between;
     align-items: center;
-    padding:32px 24px;
+    padding:32px 12px;
+    min-height: inherit;
   }
   
   .about .logo-about{
@@ -381,7 +487,7 @@ form input, form textarea{
     cursor: pointer;
     margin-right:0;
     padding:8px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   
   .abas .conteudo-aba{
@@ -405,6 +511,13 @@ form input, form textarea{
     display: block;
   }
  
+  #bottom-footer{
+    text-align:center;
+    justify-content: center;
+  }
+
+
+
 
 
 }
