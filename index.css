@@ -12,7 +12,7 @@
     --grayMedium: #e5e5e5; 
     --white: #FFFFFF;
     --transparent-white:rgba(256, 256, 256, 0.25);
-    --transparent-black:rgba(0, 0, 0, 0.25);
+    --transparent-black:rgba(0, 0, 0, 0.5);
 
   }
   
@@ -43,6 +43,10 @@
     max-width: 100%;
   }
 
+  p{
+    font: 1rem;
+    line-height: 2;
+  }
 
   #root{
     min-height: 100vh - 94px;
@@ -119,17 +123,15 @@ label[for="bt-menu"]{
 .main-button{
   width: 192px;
   padding:14px 60px;
+  margin-right:16px;
   text-transform: uppercase;
   border-radius:10px;
   font-weight: bold;
-  margin-right:16px;
-
 }
 
 .red{
   color:var(--white);
   background-color:var(--red);
-
 }
 
 .white{
@@ -137,11 +139,91 @@ label[for="bt-menu"]{
   background-color:var(--white);
 }
 
+.about{
+  color:var(--white);
+  border-top: 4px solid var(--white);
+  flex-grow:1;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding:64px 80px;
+}
+
+.about .logo-about{
+  flex-grow: 1;
+  flex-basis:0 
+}
 
 
-/* MEDIA QUERY - RESPONSIVO */
+.abas{
+  flex-grow:1;
+  flex-basis:0;
+  display: flex;
+  flex-wrap:wrap;
+  padding:16px;
+  align-items:center;
+}
+
+.abas label{
+  order:1;
+  display: block;
+  cursor: pointer;
+  margin-right:32px;
+}
+
+.abas .conteudo-aba{
+  order:99;
+  flex-grow:1;
+  width:100%;
+  display: none;
+  padding:0.5rem;
+}
+
+.abas input[type="radio"]{
+  display: none;
+}
+
+.abas input[type="radio"]:checked + label{
+  border-bottom:4px solid var(--red);
+  font-weight:bold;
+
+}
+
+.abas input[type="radio"]:checked + label + .conteudo-aba{
+  display: block;
+}
+
+
+#contact{
+ 
+  background-color:gray;
+  color:white;
+  text-align:center;
+  padding-top: 64px;
+  padding-bottom:32px;
+}
+
+form input, form textarea{
+  display: block;
+  margin:10px auto;
+}
+
+
+
+/* ******************* MEDIA QUERY  - 850px p baixo ************************ */
 
 @media(max-width:850px){ 
+
+  h1{
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+
+  h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+
+  }
 
   header{
     height: 60px;
@@ -151,9 +233,9 @@ label[for="bt-menu"]{
     display:block;
     float: right;
     cursor: pointer;
-    margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    color:var(--white);
   }
 
   .main-logo{
@@ -212,7 +294,6 @@ label[for="bt-menu"]{
 
   }
 
-
   .menu-top li:hover, .menu-top li:active{
     color:var(--white);
     font-weight: bold;
@@ -239,17 +320,14 @@ label[for="bt-menu"]{
     background-size: cover;
     background-position:center;
     padding:0;
-    padding-top: 250px;
+    padding-top: 150px;
     margin-left:0;
-
-
-  
   }
   
   .video-intro{
-    width:70vw;
+    width:80vw;
     height:270px;
-    padding:8px 32px;
+    padding:8px 24px;
     margin:0 auto;
     margin-bottom: 32px;
   }
@@ -257,22 +335,76 @@ label[for="bt-menu"]{
   .main-buttons{
     margin:0 auto;
     text-align: center;
-    padding:8px 32px;
+    padding:8px 16px;
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   
   .main-button{
-    width: 100%;
-    padding:8px 20px;
+    width:inherit;
+    padding:8px 24px;
     font-weight: bold;
     font-size:0.95rem;
-
+    margin:0;
+  }
+  
+  .about{
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding:32px 24px;
+  }
+  
+  .about .logo-about{
+    flex-grow: 1;
+    flex-basis:0;
+    margin-bottom:32px;
+    padding:32px;
+    
+  }
+  
+  .abas{
+    flex-grow:1;
+    flex-basis:0;
+    display: flex;
+    flex-wrap:wrap;
+    padding:8px;
+    font-size: 0.85rem;
+    justify-content: center;
+  }
+  
+  .abas label{
+    order:1;
+    display: block;
+    cursor: pointer;
+    margin-right:0;
+    padding:8px;
+    font-size: 0.9rem;
+  }
+  
+  .abas .conteudo-aba{
+    order:99;
+    flex-grow:1;
+    width:100%;
+    display: none;
+    padding:0.5rem;
+  }
+  
+  .abas input[type="radio"]{
+    display: none;
+  }
+  
+  .abas input[type="radio"]:checked + label{
+    border-bottom:4px solid var(--red);
   
   }
   
+  .abas input[type="radio"]:checked + label + .conteudo-aba{
+    display: block;
+  }
+ 
 
 
 }
