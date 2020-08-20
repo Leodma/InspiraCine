@@ -1,0 +1,101 @@
+{
+    "categorias":[
+        {
+            "id":1,
+            "titulo":"Projeto Annelies",
+            "playlist_youtube":"#",
+            "descricao":"O espaço era muito apertado, todos permaneciam em silêncio e frequentemente com medo. Em seu décimo terceiro aniversário, pouco antes de passar a viver no esconderijo, Annelies recebeu um diário de presente."
+        }
+    ],
+    "videos":[
+        {
+            "id":1,
+            "categoria":1,
+            "num_episodio":1,
+            "titulo": "Eins",
+            "descricao":"Anne acorda no dia do seu aniversário e recebe muitos presentes. Entre eles, um binoculos, uma caneta tinteiro e seu famoso diario",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":2,
+            "categoria":1,
+            "num_episodio":2,
+            "titulo": "Zwei",
+            "descricao":"Anne começa a escrever para sua amiga Kitty, o diário que recebeu. Na mesma semana o Führer anuncia mudanças na política da guerra.",
+            "url": "https://www.youtube.com/watch?v=z-kXWD_HV14"
+        },
+        {
+            "id":3,
+            "categoria":1,
+            "num_episodio":3,
+            "titulo": "Drei",
+            "descricao":"Com as mudanças, muitas coisas tornaram-se proibidas. O medo foi instaurado no povo judeu. Eles são obrigados a usar a estrela-de-david no peito.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":4,
+            "categoria":1,
+            "num_episodio":4,
+            "titulo": "Vier",
+            "descricao":"As regras ficam mais rígidas, obrigando a família Frank a se mudar para a Holanda. Durante a  mudança, tudo precisa ser feito cautelosamente.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":5,
+            "categoria":1,
+            "num_episodio":5,
+            "titulo": "Funf",
+            "descricao":"A adaptação da família na nova moradia acontece de forma lenta, mas extremamente necessária. Muitas coisas mudaram, mas a saúde permanece",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":6,
+            "categoria":1,
+            "num_episodio":6,
+            "titulo": "Sechs",
+            "descricao":"Mesmo com  um cotidiano limitado, a família consegue seguir seu caminho. Desde higiene pessoal até alimentaçao, tudo influencia. Inclusive brigas.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":7,
+            "categoria":1,
+            "num_episodio":7,
+            "titulo": "Sieben",
+            "descricao":"Anne fica um mês sem escrever em seu diário. Quando volta, percebe que a rotina já virou estressante, mas que precisa seguir.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":8,
+            "categoria":1,
+            "num_episodio":8,
+            "titulo": "Acht",
+            "descricao":"O Führer começa a fechar ainda mais  o cerco. A descrição das mortes no rádio fica intensa e a sensação é que está mais perto a cada dia que passa.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":9,
+            "categoria":1,
+            "num_episodio":9,
+            "titulo": "Newn",
+            "descricao":"Anne percebeu seu crescimento. Já faz mais de um ano que estão escondidos no Anexo Secreto, mas as lembranças de uma vida comum continuam bem vivas",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":10,
+            "categoria":1,
+            "num_episodio":10,
+            "titulo": "Zehn",
+            "descricao":"Finalmente a narração é revelada. É feita por uma jornalista em frente ao pai de Anne, Otto, que explica que sobreviveu ao caos completo.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        },
+        {
+            "id":11,
+            "categoria":1,
+            "num_episodio":11,
+            "titulo": "Elf",
+            "descricao":"Sozinha com seu diário, Annelies Marie Frank termina de escrever sua última página, sem saber que estava perto do fim. Três dias depois, o Anexo Secreto é descoberto. O destino da família estava, finalmente, nas mãos de Hitler.",
+            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+        } 
+
+    ]
+}

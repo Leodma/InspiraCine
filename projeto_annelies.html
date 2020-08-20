@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-    <link href="css/menu.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="css/footer.css" rel="stylesheet" type="text/css">
+      <link href="css/index.css" rel="stylesheet" type="text/css">
+      <link href="css/menu.css" rel="stylesheet" type="text/css">
+      <link href="css/main.css" rel="stylesheet" type="text/css">
+      <link href="css/footer.css" rel="stylesheet" type="text/css">
     <title>Inspira Cine Mulheres</title>
 </head>
 <body>
     <header>
             <div class='main-logo'>
-                <a href="#">
+                <a href="index.html">
                     <img   src="files/logo_inspiracine.svg">
                 </a>
             </div>
@@ -25,10 +25,10 @@
            <nav class="menu-top">
                 <h2>Menu</h2>
                <ul>
-                   <li><a href="#">Início</a></li>
-                   <li><a href="#about">Sobre</a></li>
-                   <li><a href="projeto_annelies.html">Projetos</a></li>
-                   <li><a href="#contact">Contato</a></li>
+                   <li><a href="index.html">Início</a></li>
+                   <li><a href="index.html#about">Sobre</a></li>
+                   <li><a href="#">Projetos</a></li>
+                   <li><a href="index.html#contact">Contato</a></li>
                </ul>
            
                <img src="files/logo_original.svg">
@@ -49,21 +49,28 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.4 28.4"><title>logo_youtube</title><path d="M14.8,0A14.2,14.2,0,1,0,29,14.2,14.19,14.19,0,0,0,14.8,0Zm8.1,14.8a19.419,19.419,0,0,1-.2,2.4,4.347,4.347,0,0,1-.6,1.5,2.127,2.127,0,0,1-1.6.6c-2.2.2-5.5.2-5.5.2s-4.1,0-5.4-.2a2.7,2.7,0,0,1-1.7-.6,2.9,2.9,0,0,1-.6-1.5,19.419,19.419,0,0,1-.2-2.4V13.7a19.419,19.419,0,0,1,.2-2.4,4.347,4.347,0,0,1,.6-1.5A2.6,2.6,0,0,1,9.5,9c2.2-.1,5.5-.1,5.5-.1h0s3.3,0,5.5.2a2.127,2.127,0,0,1,1.6.6,2.9,2.9,0,0,1,.6,1.5,19.419,19.419,0,0,1,.2,2.4Z" transform="translate(-0.6 0)"/><polygon points="12.8 16.1 12.8 11.9 17 14 12.8 16.1"/></svg>
                 </li>
              </ul>
-            </nav>
-       
+            </nav>  
     </header>
     <main>
-        <section id='main-content'>
-            <div class="video-intro">
-                <h1>Annelies</h1>
-                <h2>Episodio 1 | Eins</h2>
-                <p>Ane acorda no dia de seu aniversário e recebe muitos presentes. Entre eles, um binóculo, uma caneta-tinteiro e seu famoso diário.</p>
+        <section id='main-project-content'>
+            <div class="project-intro">
+                <div class="project-text-intro">
+                    <h1>Annelies</h1>
+                    <h3>11 Episódios</h3>
+                    <p>O espaço era muito apertado, todos permaneciam em silêncio e frequentemente com medo. Em seu décimo terceiro aniversário, pouco antes de passar a viver no esconderijo, Annelies recebeu um diário de presente.</p>
+                </div>
+                
+                <div class="main-buttons">
+                   <a class="main-button red" href="#">Assista Agora</a>
+                   <a href="#" class="main-button white red-border">Conheça o Projeto</a>
+                </div>
             </div>
 
-            <div class="main-buttons">
-               <a class="main-button red" href="#">Assistir</a>
-               <a href="#" class="main-button white">Informações</a>
+            <div class="project-image">
+                <img src="files/Annelies3.jpg" alt="">
+                
             </div>
+
         </section>
 
         <section class='about' id="about">
@@ -76,14 +83,14 @@
                     </div>
 
                     <input type="radio" id="aba-2" name="aba" >
-                    <label for="aba-2">Como Funciona</label>
+                    <label for="aba-2">Elenco</label>
                     <div class="conteudo-aba">
                         <p>O <strong> projeto lEWLELELE: Mulheres</strong> é uma parceria entre o Tribunal de Justiça de Mato Grosso do Sul por meio da Coordenadoria Estadual da Mulher em Situação de Violência Doméstica e Familiar e Secretaria de Comunicação; com a professora Gina Vieira – projeto Mulheres Inspiradoras
                         </p>
                     </div>
 
                     <input type="radio" id="aba-3" name="aba" >
-                    <label for="aba-3">Como Participar</label>
+                    <label for="aba-3">Bastidores e +</label>
                     <div class="conteudo-aba">
                         <p>O <strong> projeto LALALA: Mulheres</strong> é uma parceria entre o Tribunal de Justiça de Mato Grosso do Sul por meio da Coordenadoria Estadual da Mulher em Situação de Violência Doméstica e Familiar e Secretaria de Comunicação; com a professora Gina Vieira.
                         </p>
@@ -93,26 +100,16 @@
             </div>
         
             <div class="logo-about">
-                <img src="files/logo_inspiracine_branca.svg"> 
+                <img src="files/annelies.png"> 
             </div>
         </section>
-        <section id="contact">
-            <h2>Contato </h2>
-            <p>Dùvidas ou sugestões? Entre em contato.</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Insira seu nome ..." required>
 
-                <label for="nome">Telefone:</label>
-                <input type="text" id="fone" name="fone" data-mask="00-000-000" inputmode="numeric">
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Insira seu e-mail">
-
-                <label for='assunto'>Assunto:</label>
-                <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder=" ..."></textarea>
-            </form>
-        </section>
+        <section id="episodes">
+            <h2>Episódios </h2>
+            <ul class="video-list" data-js="video-list">
+               
+            </ul>
+            
     </main>
     <footer>
         <ul id="logos-footer">
@@ -170,6 +167,6 @@
         </div>
 
     </footer>
-    <script src="./controlers.js"></script>
+    <script src="video_controler.js"></script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding:10px;
+    height: 70px;
+    background-color:var(--red);
+    box-shadow:5px 0px 10px black;
+    z-index: 3;
+}
+.main-logo{
+  max-width: 370px;
+  display: block;
+  float: left;
+}
+.menu-top{
+  float:right;
+}
+
+.menu-top li{
+ display: inline-block;
+ padding:4px 15px;
+ margin:0 5px;
+ color:white;
+ font-size: 1rem;
+ text-transform: uppercase;
+}
+
+
+.menu-top li:hover, .menu-top li:active{
+color:var(--red);
+font-weight: bold;
+background-color:var(--white);
+border-radius: 10px;
+}
+#bt-menu,.menu-top .social-media-menu, .menu-top h2, .menu-top img {
+display: none;
+}
+label[for="bt-menu"]{
+display: none;
+}
+
+@media(max-width:850px){ 
+
+    header{
+        height: 60px;
+      }
+    
+      label[for="bt-menu"]{
+        display:block;
+        margin-right: 8px;
+        float: right;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color:var(--white);
+      }
+    
+      .main-logo{
+        max-width: 260px;
+      }
+    
+      #bt-menu:checked ~ .menu-top{
+        display: block;
+        position: fixed;
+        width: 65vw;
+        background-color:var(--white);
+        padding-right: 20px;
+       
+      }
+
+      .icon-menu::before{
+        content: 'menu';
+       }
+       
+       #bt-menu:checked + label >.icon-menu::before {
+        content:'close';
+       }
+    
+      .menu-top ul{
+        padding:0;
+      }
+    
+      .menu-top{
+        display: block;
+        position: fixed;
+        top:60px;
+        right: 0;
+        height: 100%;
+        width:0;
+        background-color:var(--white);
+        transition: all 0.3s ease-in;
+        text-align:center;
+      }
+    
+      .menu-top li{
+        display: block;
+        margin-top:20px;
+        padding:10px;
+        color:var(--black);
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    
+      .menu-top .social-media-menu, .menu-top h2, .menu-top img{
+        display: block;
+      }
+    
+      .menu-top img:first-of-type{
+        margin:0 auto;
+        margin-top:30px;
+      }
+    
+      .menu-top .social-media-menu{
+        margin-top:20px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-flow: row;
+        justify-content: center;
+    
+      }
+    
+      .menu-top li:hover, .menu-top li:active{
+        color:var(--white);
+        font-weight: bold;
+        background-color:var(--red);
+        border-radius:0;
+      }
+      
+      .menu-top .social-media-icon{
+        padding: 0;
+        opacity: 0.6;
+        width: 40px;
+      }
+    
+      .menu-top .social-media-icon:hover, .menu-top .social-media-icon:active{
+        padding: 0;
+        opacity: 1;
+        background-color:var(--white);
+      }
+    
+
+}
