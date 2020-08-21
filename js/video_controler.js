@@ -40,7 +40,7 @@
       return params;
   }
 
-  function getVideo(categoria, id, lista){
+  function getVideo(id, lista){
     let video =  lista.find(obj=> obj.id === id);
       console.log('achei o video', video)
       return video;
@@ -91,7 +91,7 @@
     if (win.location.href.search(/episodio.html/)){
       let params = getURLParams();
       console.log("parametros dentro do load",params);
-      let video = getVideo(params.categoria,params.id, dataVideos);
+      let video = getVideo(params.id, dataVideos);
       let id = getYouTubeId(video.url);
       videoIframe.innerHTML = generateEmbedIframe(id);
       videoDescription.innerHTML = generateVideoDescription(video);

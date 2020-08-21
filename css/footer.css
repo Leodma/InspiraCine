@@ -3,6 +3,10 @@ footer{
     padding-top:64px; 
   }
 
+  .box-logo-footer{
+    text-align: right;
+  }
+
   #logos-footer{ 
     margin:32px auto;
     list-style: none;
@@ -42,6 +46,7 @@ footer{
 
   .social-media-footer{
     list-style: none;
+    padding:0;
   }
 
   .social-media-footer .social-media-icon{
@@ -51,7 +56,9 @@ footer{
     padding: 10px;
   }
 
-  .social-media-footer .social-media-icon:hover{
+  .social-media-footer .social-media-icon:hover,
+  .social-media-footer .social-media-icon:active
+  {
     fill: var(--transparent-white);
   }
 
@@ -63,5 +70,17 @@ footer{
         text-align:center;
         justify-content: center;
       }
+
+      .box-logo-footer{
+        text-align: center;
+      }
     
+}
+
+@media(max-width:450px){ 
+
+ 
+  .box-logo-footer{
+    text-align: center;
+  }
 }
