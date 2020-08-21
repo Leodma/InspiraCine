@@ -129,7 +129,6 @@ overflow: hidden;
   height: 100vh;
   background-color: var(--black);
   color:var(--white);
-  line-height: 0;
   padding-top:16px;
   display: flex;
   flex-flow: column;
@@ -572,8 +571,19 @@ form textarea:focus{
   
   #video-player{
     height: inherit;
-  
+
   }
+
+  .video-player-top{
+    font-size: 0.7rem;
+  }
+  
+
+  .small-button{
+    margin-right: 8px;
+    padding:8px 4px;
+  }
+
   .video-player-box{
     width: 248px;
     height: 186px;

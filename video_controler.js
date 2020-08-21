@@ -58,7 +58,7 @@
             target="self"
             title="Protetivas Online"
           >
-              <img class="video-image" src=${imageLink}>
+              <img class="video-image" src=${imageLink} alt="Assista ao Episódio ${video.num_episodio} da série Annelies">
           </a>
             <div class="video-text">
               <h3>Episódio ${video.id} - ${video.titulo}</h3>
