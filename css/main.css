@@ -65,7 +65,25 @@ transition: all 0.2s;
 }
 
 .main-button:hover{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.small-button{
+    padding:4px 16px;
+    margin-right:16px;
+    text-transform: uppercase;
+    border-radius:8px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.small-button i{
+  font-size:1rem;
+  margin-right:8px;
+
+}
+
+.small-button:hover, .small-button:active{
+  color:var(--red);
 }
 
 .red{
@@ -80,7 +98,16 @@ background-color:var(--white);
 
 .red-border{
 border:1px solid var(--red);
+}
 
+.black{
+  background-color: var(--black);
+  color:var(--white);
+}
+
+.transparent-black{
+  background-color:var(--transparent-black);
+  color:var(--white);
 }
 
 .project-intro{
@@ -94,6 +121,58 @@ color:var(--black);
 width: 565px;
 height: 450px;
 overflow: hidden;
+}
+
+
+/****** Player de Vìdeo ****/
+#video-player{
+  height: 100vh;
+  background-color: var(--black);
+  color:var(--white);
+  line-height: 0;
+  padding-top:16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.video-player-top{
+  width: 95vw;
+  left: 8px;
+  text-align: left;
+  margin-bottom: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-player-top-right-button{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.video-player-box{
+  
+  width: 640px;
+  height: 360px;
+}
+
+.video-description{
+  margin-bottom:16px;
+  padding: 16px 0;
+  width: 640px;
+  color:var(--white);
+  text-align: left;
+  line-height: 2;
+}
+
+.loader{
+  padding-top:160px;
+  margin:0 auto;
+  text-align:center;
 }
 
 /* Seção About - Com abas */
@@ -160,7 +239,8 @@ display: block;
   padding: 64px 80px 32px 80px;
 }
 
-/* episodios */
+/* Listagem de Episódios */
+
 #episodes{
 min-height: 100vh;
 
@@ -218,6 +298,7 @@ padding:0;
 
 
 /* Formulario de Contato */
+
 #contact{
   text-align:center;
 }
@@ -291,8 +372,6 @@ form textarea:focus{
         display: flex;
         flex-flow: column-reverse;
         align-items: stretch;
-       
-       
         }
 
       .main-buttons{
@@ -426,8 +505,6 @@ form textarea:focus{
         line-height: 1;
         font-size: 0.9rem;
       }
-
-    
       
       .video-episode a{
         overflow: hidden;
@@ -461,7 +538,47 @@ form textarea:focus{
       }
       
 
+      
+
 }
 
 
+@media(max-width:680px){ 
+
+/* Vìdeo Player Telas Menores */
+
+
+#video-player{
+  height: inherit;
+
+}
+.video-player-box{
+  width: 426px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.video-description{
+  width: 426px;
+}
+
+}
   
+
+@media(max-width:450px){ 
+
+  /* Vìdeo Player Telas Menores */
+  
+  
+  #video-player{
+    height: inherit;
+  
+  }
+  .video-player-box{
+    width: 248px;
+    height: 186px;
+  }
+  
+  .video-description{
+    width: 248px;
+  }

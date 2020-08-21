@@ -2,10 +2,11 @@
   'use strict';
 
   const ajax = new XMLHttpRequest();
-  const videoList = doc.querySelector('[data-js="video-list"]')
-  ;
-  console.log(videoList);
-
+  const videoList = doc.querySelector('[data-js="video-list"]');
+  const videoIframe = doc.querySelector('[data-js="video-player-box"]');
+  const videoDescription = doc.querySelector('[data-js="video-description');
+  let dataVideos = {};
+  
   function handleResponse(req){
     if (req.readyState === 4 &&  req.status === 200){
       return req.response;
@@ -26,8 +27,24 @@
   };
   
   function generateEmbedIframe(id_video){
-    return `<iframe width="560" height="315" src="https://www.youtube.com/embed/${id_video}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    return `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id_video}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `
+  }
+
+  function getURLParams(){
+      let videoUrl = win.location.search;
+      let params = {};
+      params.categoria =  Number(new URLSearchParams(videoUrl).get("projeto"));
+      params.id =  Number(new URLSearchParams(videoUrl).get("ep"));
+      console.log(params);
+      return params;
+  }
+
+  function getVideo(categoria, id, lista){
+    let video =  lista.find(obj=> obj.id === id);
+      console.log('achei o video', video)
+      return video;
+
   }
   
   function generateVideoItem(video){
@@ -37,8 +54,8 @@
     let li = `
       <li class="video-episode">
           <a 
-            href=${video.url}
-            target="blank"
+            href="episodio.html?projeto=${video.categoria}&ep=${video.id}"
+            target="self"
             title="Protetivas Online"
           >
               <img class="video-image" src=${imageLink}>
@@ -60,16 +77,41 @@
     });
   }
 
+  function generateVideoDescription(video){
+    return `
+      <div> 
+        <h3>Episódio ${video.num_episodio} - ${video.titulo}</h3>
+        <p>${video.descricao}</p>
+      </div>
+      
+    `
+  }
+
+  function loadVideoIframe(){
+    if (win.location.href.search(/episodio.html/)){
+      let params = getURLParams();
+      console.log("parametros dentro do load",params);
+      let video = getVideo(params.categoria,params.id, dataVideos);
+      let id = getYouTubeId(video.url);
+      videoIframe.innerHTML = generateEmbedIframe(id);
+      videoDescription.innerHTML = generateVideoDescription(video);
+    }
+  }
+
 
   ajax.open('GET', 'db.json');
   ajax.send();
   ajax.addEventListener('loadend', function(){
       var data = JSON.parse(handleResponse(ajax));
       if(data)
-        console.log(data)
         generateVideoList(data.videos, videoList);
+        dataVideos = data.videos;
+        console.log("dados carregados com sucesso!!");
+        win.onload = loadVideoIframe();
       });
  
+  
+
 
 })(window, document);
 
