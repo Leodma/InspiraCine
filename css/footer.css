@@ -3,6 +3,12 @@ footer{
     padding-top:64px; 
   }
 
+footer >p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 32px;
+}
+
   .box-logo-footer{
     text-align: right;
   }
