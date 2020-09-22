@@ -374,7 +374,7 @@ form textarea:focus{
         padding-top:32px;
         padding-left: 0;
         padding-bottom: 64px;
-        padding:100px 32px 64px 32px;
+        /* padding:100px 32px 64px 32px; */
         display: flex;
         flex-flow: column-reverse;
         align-items: stretch;
