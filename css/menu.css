@@ -27,6 +27,9 @@ header{
  text-transform: uppercase;
 }
 
+.menu-top li a img{
+  display: inline-block;
+}
 
 .menu-top li:hover, .menu-top li:active{
 color:var(--red);
