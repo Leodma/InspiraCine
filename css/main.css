@@ -37,13 +37,13 @@ linear-gradient(
 url(../files/fundo_serie.jpg);
 background-position:center top;
 background-size: cover;
-padding-top:150px;
+padding-top:32px;
 padding-left: 32px;
 padding-bottom: 64px;
 display: flex;
 flex-flow: row nowrap;
 justify-content: space-around;
-align-items:flex-end;
+margin-top:68px;
 }
 
 .video-intro{
@@ -62,7 +62,7 @@ color:var(--white);
 
 .video-intro img{
   width: 350px;
-  margin-left: -32px;
+
 }
 
 .main-buttons{
@@ -139,15 +139,14 @@ border:1px solid var(--red);
 
 .project-intro{
 max-width:620px;
-max-inline-size:450px;
-margin-bottom: 32px;
+flex-basis:50%
 color:var(--white);
 }
 
 .project-intro img{
   position: relative;
-  top:32px;
-  left:-40px;
+  margin-bottom: 16px;
+  max-width: 350px; 
 }
 
 .project-image{
@@ -234,6 +233,7 @@ padding:64px 80px;
 flex-grow: 1;
 flex-basis:0 ;
 padding-top: 84px;
+padding-left:32px;
 }
 
 .abas{
@@ -401,15 +401,12 @@ form textarea:focus{
 
       #main-project-content{
         height: inherit;
-        
-        margin-top:0;
-        padding-top:32px;
         padding-left: 0;
         padding-bottom: 64px;
         /* padding:100px 32px 64px 32px; */
         display: flex;
         flex-flow: column-reverse;
-        align-items: stretch;
+        align-items: center;
         }
 
       .main-buttons{
@@ -433,10 +430,14 @@ form textarea:focus{
         max-width:100%;
         margin-bottom: 32px;
         }
+
+        .project-intro img{
+          margin: 16px auto;
+        }
         
         .project-image{
-        width: 320px;
-        height: 450px;
+        width: 220px;
+        height: 280px;
         flex-shrink: 0;
         margin: 0 auto;
         overflow: hidden;
@@ -444,6 +445,7 @@ form textarea:focus{
       
       .project-text-intro{
         text-align:center;
+        color:white;
       }
 
 
