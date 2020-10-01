@@ -13,56 +13,56 @@
             "categoria":1,
             "num_episodio":1,
             "titulo": "Eins",
-            "descricao":"Anne acorda no dia do seu aniversário e recebe muitos presentes. Entre eles, um binoculos, uma caneta tinteiro e seu famoso diario",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+            "descricao":"Annelies Marie Frank é uma garota alemã comum. Quando acorda animada para comemorar o seu aniversário, percebe que sua família está preparando algo lá fora sem que ela saiba.",
+            "url": "https://www.youtube.com/watch?v=WKQYr9VJ1ys&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=1"
         },
         {
             "id":2,
             "categoria":1,
             "num_episodio":2,
             "titulo": "Zwei",
-            "descricao":"Anne começa a escrever para sua amiga Kitty, o diário que recebeu. Na mesma semana o Führer anuncia mudanças na política da guerra.",
-            "url": "https://www.youtube.com/watch?v=z-kXWD_HV14"
+            "descricao":"No ano de 1940, em plena Segunda Guerra Mundial e ascensão de Adolf Hitler, Anne Frank vê os direitos judeus serem cortados ao nível sub-humano. Em termos gerais, a perseguição antissemita se faz tão violenta a ponto de apagar a felicidade da festa das luzes.",
+            "url": "https://www.youtube.com/watch?v=VBiC437JA2c&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=2"
         },
         {
             "id":3,
             "categoria":1,
             "num_episodio":3,
             "titulo": "Drei",
-            "descricao":"Com as mudanças, muitas coisas tornaram-se proibidas. O medo foi instaurado no povo judeu. Eles são obrigados a usar a estrela-de-david no peito.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+            "descricao":"Com os olhares invasivos e abusivos, Anne Frank descobre que seu pai está levando pertences escondidos para Amsterdã, na Holanda, de modo que possam mudar de casa rapidamente.",
+            "url": "https://www.youtube.com/watch?v=UNijJhtmTGc&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=3"
         },
         {
             "id":4,
             "categoria":1,
             "num_episodio":4,
             "titulo": "Vier",
-            "descricao":"As regras ficam mais rígidas, obrigando a família Frank a se mudar para a Holanda. Durante a  mudança, tudo precisa ser feito cautelosamente.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+            "descricao":"Ao notar que o pai Otto Frank recebeu uma notificação do governo alemão, a família Frank não perde tempo. Em poucas horas, estavam se mudando para os fundos de uma fábrica de geleia na Holanda.",
+            "url": "https://www.youtube.com/watch?v=ftQFQwJAVwg&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=4"
         },
         {
             "id":5,
             "categoria":1,
             "num_episodio":5,
-            "titulo": "Funf",
-            "descricao":"A adaptação da família na nova moradia acontece de forma lenta, mas extremamente necessária. Muitas coisas mudaram, mas a saúde permanece",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+            "titulo": "Fünf",
+            "descricao":"Já presa no Anexo Secreto, Anne Frank organiza seu quarto para que possa ter o mínimo de condição para a sobrevivência. Mesmo assim, os sonhos da liberdade a tomam por completo.",
+            "url": "https://www.youtube.com/watch?v=x9dhpNKqOvc&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=5"
         },
         {
             "id":6,
             "categoria":1,
             "num_episodio":6,
             "titulo": "Sechs",
-            "descricao":"Mesmo com  um cotidiano limitado, a família consegue seguir seu caminho. Desde higiene pessoal até alimentaçao, tudo influencia. Inclusive brigas.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+            "descricao":"As condições de sobrevivência ficam cada vez mais exigentes: banhos apenas aos domingos, pouca comida e brigas cada vez mais presentes. O medo e a fome se instauram.",
+            "url": "https://www.youtube.com/watch?v=aaKjbIWoaJ0&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=6"
         },
         {
             "id":7,
             "categoria":1,
             "num_episodio":7,
             "titulo": "Sieben",
-            "descricao":"Anne fica um mês sem escrever em seu diário. Quando volta, percebe que a rotina já virou estressante, mas que precisa seguir.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
+            "descricao":"Devido ao fato de estarem isolados do resto do mundo, os sobreviventes no Anexo Secreto enfrentam um inimigo ainda pior: a doença. A falta de médicos e tratamentos adequados podem ser decisivos para a destruição do esconderijo.",
+            "url": "https://www.youtube.com/watch?v=TKShwg2H3Yw&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=7"
         },
         {
             "id":8,
