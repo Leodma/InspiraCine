@@ -15,6 +15,14 @@
             "titulo": "Annelies | Trailer Oficial",
             "descricao":"Annelies Marie Frank é uma garota alemã comum. Assim que o Führer assume o poder, os judeus são terrivelmente perseguidos. Como única escapatória, a família Frank se muda para Amsterdã, na Holanda, mesmo sabendo que teriam que viver sob condições sub-humanas. Anne, então, registra toda sua experiência em um diário.",
             "url": "https://www.youtube.com/watch?v=xmxBpiDaIzA"
+        },
+        {
+            "id":2,
+            "categoria":1,
+            "num_episodio":2,
+            "titulo": "Annelies | Trailer Oficial 2",
+            "descricao":"Confira o segundo trailer da minissérie Annelies, livremente inspirada na vida e obra de Anne Frank",
+            "url": "https://youtu.be/VANHOZ5jH0I"
         }
     ]
 }
