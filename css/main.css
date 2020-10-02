@@ -139,7 +139,7 @@ border:1px solid var(--red);
 
 .project-intro{
 max-width:620px;
-flex-basis:50%
+flex-basis:50%;
 color:var(--white);
 }
 
