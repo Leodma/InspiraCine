@@ -12,90 +12,9 @@
             "id":1,
             "categoria":1,
             "num_episodio":1,
-            "titulo": "Eins",
-            "descricao":"Annelies Marie Frank é uma garota alemã comum. Quando acorda animada para comemorar o seu aniversário, percebe que sua família está preparando algo lá fora sem que ela saiba.",
-            "url": "https://www.youtube.com/watch?v=WKQYr9VJ1ys&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=1"
-        },
-        {
-            "id":2,
-            "categoria":1,
-            "num_episodio":2,
-            "titulo": "Zwei",
-            "descricao":"No ano de 1940, em plena Segunda Guerra Mundial e ascensão de Adolf Hitler, Anne Frank vê os direitos judeus serem cortados ao nível sub-humano. Em termos gerais, a perseguição antissemita se faz tão violenta a ponto de apagar a felicidade da festa das luzes.",
-            "url": "https://www.youtube.com/watch?v=VBiC437JA2c&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=2"
-        },
-        {
-            "id":3,
-            "categoria":1,
-            "num_episodio":3,
-            "titulo": "Drei",
-            "descricao":"Com os olhares invasivos e abusivos, Anne Frank descobre que seu pai está levando pertences escondidos para Amsterdã, na Holanda, de modo que possam mudar de casa rapidamente.",
-            "url": "https://www.youtube.com/watch?v=UNijJhtmTGc&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=3"
-        },
-        {
-            "id":4,
-            "categoria":1,
-            "num_episodio":4,
-            "titulo": "Vier",
-            "descricao":"Ao notar que o pai Otto Frank recebeu uma notificação do governo alemão, a família Frank não perde tempo. Em poucas horas, estavam se mudando para os fundos de uma fábrica de geleia na Holanda.",
-            "url": "https://www.youtube.com/watch?v=ftQFQwJAVwg&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=4"
-        },
-        {
-            "id":5,
-            "categoria":1,
-            "num_episodio":5,
-            "titulo": "Fünf",
-            "descricao":"Já presa no Anexo Secreto, Anne Frank organiza seu quarto para que possa ter o mínimo de condição para a sobrevivência. Mesmo assim, os sonhos da liberdade a tomam por completo.",
-            "url": "https://www.youtube.com/watch?v=x9dhpNKqOvc&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=5"
-        },
-        {
-            "id":6,
-            "categoria":1,
-            "num_episodio":6,
-            "titulo": "Sechs",
-            "descricao":"As condições de sobrevivência ficam cada vez mais exigentes: banhos apenas aos domingos, pouca comida e brigas cada vez mais presentes. O medo e a fome se instauram.",
-            "url": "https://www.youtube.com/watch?v=aaKjbIWoaJ0&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=6"
-        },
-        {
-            "id":7,
-            "categoria":1,
-            "num_episodio":7,
-            "titulo": "Sieben",
-            "descricao":"Devido ao fato de estarem isolados do resto do mundo, os sobreviventes no Anexo Secreto enfrentam um inimigo ainda pior: a doença. A falta de médicos e tratamentos adequados podem ser decisivos para a destruição do esconderijo.",
-            "url": "https://www.youtube.com/watch?v=TKShwg2H3Yw&list=PLnSjMLLkWLvMymHMaZ9AhIKT7UBtHldoC&index=7"
-        },
-        {
-            "id":8,
-            "categoria":1,
-            "num_episodio":8,
-            "titulo": "Acht",
-            "descricao":"O Führer começa a fechar ainda mais  o cerco. A descrição das mortes no rádio fica intensa e a sensação é que está mais perto a cada dia que passa.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
-        },
-        {
-            "id":9,
-            "categoria":1,
-            "num_episodio":9,
-            "titulo": "Newn",
-            "descricao":"Anne percebeu seu crescimento. Já faz mais de um ano que estão escondidos no Anexo Secreto, mas as lembranças de uma vida comum continuam bem vivas",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
-        },
-        {
-            "id":10,
-            "categoria":1,
-            "num_episodio":10,
-            "titulo": "Zehn",
-            "descricao":"Finalmente a narração é revelada. É feita por uma jornalista em frente ao pai de Anne, Otto, que explica que sobreviveu ao caos completo.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
-        },
-        {
-            "id":11,
-            "categoria":1,
-            "num_episodio":11,
-            "titulo": "Elf",
-            "descricao":"Sozinha com seu diário, Annelies Marie Frank termina de escrever sua última página, sem saber que estava perto do fim. Três dias depois, o Anexo Secreto é descoberto. O destino da família estava, finalmente, nas mãos de Hitler.",
-            "url": "https://www.youtube.com/watch?v=UsrgJe6hr9c"
-        } 
-
+            "titulo": "Annelies | Trailer Oficial",
+            "descricao":"Annelies Marie Frank é uma garota alemã comum. Assim que o Führer assume o poder, os judeus são terrivelmente perseguidos. Como única escapatória, a família Frank se muda para Amsterdã, na Holanda, mesmo sabendo que teriam que viver sob condições sub-humanas. Anne, então, registra toda sua experiência em um diário.",
+            "url": "https://www.youtube.com/watch?v=xmxBpiDaIzA"
+        }
     ]
 }

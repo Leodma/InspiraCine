@@ -61,7 +61,7 @@
               <img class="video-image" src=${imageLink} alt="Assista ao Episódio ${video.num_episodio} da série Annelies">
           </a>
             <div class="video-text">
-              <h3>Episódio ${video.id} - ${video.titulo}</h3>
+              <h3> ${video.titulo}</h3>
               <p>${video.descricao}</p>       
             </div>
       </li>
@@ -80,7 +80,7 @@
   function generateVideoDescription(video){
     return `
       <div> 
-        <h3>Episódio ${video.num_episodio} - ${video.titulo}</h3>
+        <h3>${video.titulo}</h3>
         <p>${video.descricao}</p>
       </div>
       
