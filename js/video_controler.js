@@ -36,29 +36,27 @@
       let params = {};
       params.categoria =  Number(new URLSearchParams(videoUrl).get("projeto"));
       params.id =  Number(new URLSearchParams(videoUrl).get("ep"));
-      console.log(params);
       return params;
   }
 
   function getVideo(id, lista){
     let video =  lista.find(obj=> obj.id === id);
-      console.log('achei o video', video)
       return video;
 
   }
   
   function generateVideoItem(video){
     //retornar uma <li> com a background do video, o titulo, a descrição e o link para a pagina com o video embedado 
-    let id = getYouTubeId(video.url)
-    let imageLink = getVideoImage(id)
+    let id = getYouTubeId(video.url);
+    let imageLink = getVideoImage(id);
     let li = `
       <li class="video-episode">
           <a 
             href="episodio.html?projeto=${video.categoria}&ep=${video.id}"
             target="self"
-            title="Protetivas Online"
+            title="${video.titulo}"
           >
-              <img class="video-image" src=${imageLink} alt="Assista ao Episódio ${video.num_episodio} da série Annelies">
+              <img class="video-image" src=${imageLink} alt="Assista  ${video.titulo} da série Annelies">
           </a>
             <div class="video-text">
               <h3> ${video.titulo}</h3>
@@ -87,10 +85,9 @@
     `
   }
 
-  function loadVideoIframe(){
-    if (win.location.href.search(/episodio.html/)){
+  function loadVideoIframe(dataVideos){
+    if (win.location.href.search(/episodio.html/) !== -1){
       let params = getURLParams();
-      console.log("parametros dentro do load",params);
       let video = getVideo(params.id, dataVideos);
       let id = getYouTubeId(video.url);
       videoIframe.innerHTML = generateEmbedIframe(id);
@@ -105,9 +102,9 @@
       var data = JSON.parse(handleResponse(ajax));
       if(data)
         generateVideoList(data.videos, videoList);
-        dataVideos = data.videos;
+        // dataVideos = data.videos;
         console.log("dados carregados com sucesso!!");
-        win.onload = loadVideoIframe();
+        win.onload = loadVideoIframe(data.videos);
       });
  
   
