@@ -27,7 +27,7 @@ header{
 
 /* Definição do Container Principal da Pagina De Projetos*/
 #main-project-content{
-height: 100vh;
+min-height: 100vh;
 width: 100%;
 background: 
 linear-gradient(
@@ -275,6 +275,43 @@ font-weight:bold;
 display: block;
 }
 
+.cast {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 32px 0 0 0;
+}
+
+.cast-item{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.cast-item .cast-img{
+  margin-right: 16px;
+  min-width:160px;
+  min-height: 180px;
+  text-align:center;
+}
+
+.cast-img img{
+  background-color: grey;
+  border:2px solid var(--red);
+}
+
+.cast-text{
+  flex-basis:65%;
+  flex-shrink: 0;
+}
+
+.cast-text h3{
+  color:var(--red);
+ 
+}
+
+
 /* Seção de Formulario de Contato e Episodios */
 
 #contact, #episodes{
@@ -464,6 +501,10 @@ form textarea:focus{
         text-align: center;
       }
     
+      .video-intro p{
+        font-size: 0.9rem;
+        text-align: justify;
+      }
       .about{
         flex-flow: column-reverse;
         justify-content: space-between;
