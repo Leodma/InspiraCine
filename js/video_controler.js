@@ -56,7 +56,7 @@
             target="self"
             title="${video.titulo}"
           >
-              <img src="${imageLink}"  class="video-image" alt="Assista  ${video.titulo} da série Annelies">
+              <img src="${imageLink}" class="video-image" alt="Assista  ${video.titulo} da série Annelies">
           </a>
             <div class="video-text">
               <h3> ${video.titulo}</h3>
@@ -70,9 +70,10 @@
   function generateVideoList(arr){
     let list = '';
     arr.forEach(function(video){
-      list += generateVideoItem(video);
+      list = list.concat(generateVideoItem(video));
 
     });
+    console.log(list);
     return list;
   }
 
