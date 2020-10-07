@@ -23,7 +23,7 @@
   };
   
   function getVideoImage(id){
-    return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    return `https://img.youtube.com/vi/${id}/0.jpg`;
   };
   
   function generateEmbedIframe(id_video){
