@@ -49,7 +49,7 @@
     //retornar uma <li> com a background do video, o titulo, a descrição e o link para a pagina com o video embedado 
     let id = getYouTubeId(video.url);
     let imageLink = getVideoImage(id);
-    let li = `
+    return`
       <li class="video-episode">
           <a 
             href="episodio.html?projeto=${video.categoria}&ep=${video.id}"
@@ -63,16 +63,17 @@
               <p>${video.descricao}</p>       
             </div>
       </li>
-    `
-    return li;
+    `;
+   
   }
 
-  function generateVideoList(arr, listConainer){
+  function generateVideoList(arr){
+    let list = '';
     arr.forEach(function(video){
-      let videoItem = generateVideoItem(video);
-      listConainer.innerHTML += videoItem;
+      list += generateVideoItem(video);
 
     });
+    return list;
   }
 
   function generateVideoDescription(video){
@@ -101,8 +102,7 @@
   ajax.addEventListener('loadend', function(){
       var data = JSON.parse(handleResponse(ajax));
       if(data)
-        generateVideoList(data.videos, videoList);
-        // dataVideos = data.videos;
+        videoList.innerHTML = generateVideoList(data.videos);
         console.log("dados carregados com sucesso!!");
         win.onload = loadVideoIframe(data.videos);
       });
