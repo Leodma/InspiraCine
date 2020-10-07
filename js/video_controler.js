@@ -59,7 +59,7 @@
               <img src="${imageLink}" class="video-image" alt="Assista  ${video.titulo} da série Annelies">
           </a>
             <div class="video-text">
-              <h3> ${video.titulo}</h3>
+              <h3>OH CATCETE!! ${video.titulo}</h3>
               <p>${video.descricao}</p>       
             </div>
       </li>
