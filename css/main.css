@@ -375,6 +375,7 @@ padding:0;
   width:100%;
   position: absolute;
   top:-25px;
+  background-color: var(--black);
 }
 
 
