@@ -23,8 +23,12 @@
   };
   
   function getVideoImage(id){
-    return `https://img.youtube.com/vi/${id}/0.jpg`;
-  };
+    let image = new Image();
+    image.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    image.onload = console.log('imagem carregada');
+    image.className = "video-image";
+    return image;
+    };
   
   function generateEmbedIframe(id_video){
     return `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id_video}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -48,29 +52,51 @@
   function generateVideoItem(video){
     //retornar uma <li> com a background do video, o titulo, a descrição e o link para a pagina com o video embedado 
     let id = getYouTubeId(video.url);
-    let imageLink = getVideoImage(id);
-    return`
-      <li class="video-episode">
-          <a 
-            href="episodio.html?projeto=${video.categoria}&ep=${video.id}"
-            target="self"
-            title="${video.titulo}"
-          >
-              <img src="${imageLink}" class="video-image" alt="Assista  ${video.titulo} da série Annelies">
-          </a>
-            <div class="video-text">
-              <h3>OH CATCETE!! ${video.titulo}</h3>
-              <p>${video.descricao}</p>       
-            </div>
-      </li>
-    `;
-   
+    let imageTumb = getVideoImage(id);
+    //criando os nodes
+    let li = doc.createElement('li');
+    let a = document.createElement('a');
+    let div = document.createElement('div');
+    let h3 = document.createElement('h3');
+    let p = document.createElement('p');
+
+    //definindo os atributos dos nodes
+    li.className = "video-episode";
+    a.setAttribute('href', `episodio.html?projeto=${video.categoria}&ep=${video.id}`)
+    a.setAttribute('target', "self");
+    a.setAttribute('title',video.titulo);
+    imageTumb.setAttribute('alt', `Assista  ${video.titulo} da série Annelies`);
+    div.className = "video-text";
+    h3.innerText = video.titulo;
+    p.innerText = video.descricao;
+
+    li.appendChild(a).appendChild(imageTumb);
+    div.appendChild(h3);
+    div.appendChild(p);
+    li.appendChild(div);
+    console.log(li) ;
+    return li;
+    // return`
+    //   // <li class="video-episode">
+    //   //     <a 
+    //   //       href="episodio.html?projeto=${video.categoria}&ep=${video.id}"
+    //   //       target="self"
+    //   //       title="${video.titulo}"
+    //   //     >
+    //   //         <img src="${imageLink}" class="video-image" alt="Assista  ${video.titulo} da série Annelies">
+    //   //     </a>
+    //   //       <div class="video-text">
+    //   //         <h3>${video.titulo}</h3>
+    //   //         <p>${video.descricao}</p>       
+    //   //       </div>
+    //   // </li>
+    // `; 
   }
 
-  function generateVideoList(arr){
+  function generateVideoList(arr, node){
     let list = '';
     arr.forEach(function(video){
-      list = list.concat(generateVideoItem(video));
+      node.appendChild((generateVideoItem(video)));
 
     });
     console.log(list);
@@ -103,7 +129,8 @@
   ajax.addEventListener('loadend', function(){
       var data = JSON.parse(handleResponse(ajax));
       if(data)
-        videoList.innerHTML = generateVideoList(data.videos);
+        // videoList.innerHTML = generateVideoList(data.videos);
+        generateVideoList(data.videos, videoList);
         console.log("dados carregados com sucesso!!");
         win.onload = loadVideoIframe(data.videos);
       });
